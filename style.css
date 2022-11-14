@@ -1,0 +1,137 @@
+.header {
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.header-title {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 80px;
+}
+
+.black {
+    color: black;
+    position: relative;
+    top: 65px;
+    z-index: 3;
+    animation: jump 4s ease 0s infinite;
+
+}
+
+.red {
+    color: red;
+    opacity: 0.5;
+    position: relative;
+    z-index: 2;
+    left: 20px;
+    bottom: 10px;
+    animation: jump 3s ease 0s infinite alternate;
+}
+
+.blue {
+    color: blue;
+    opacity: 0.5;
+    position: relative;
+    left: 40px;
+    bottom: 80px;
+    z-index: 1;
+    animation: jump 3s ease 1s infinite reverse;
+}
+
+.header-btn-black {
+    background-color: black;
+    color: white;
+    display: block;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: 1s;
+}
+
+.header-btn-black:hover {
+    background-color: rgb(99, 99, 99);
+    color: black;
+}
+
+.header-btn-red {
+    background-color: red;
+    opacity: 0.5;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    z-index: 2;
+}
+
+.header-btn-blue {
+    background-color: blue;
+    opacity: 0.5;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    z-index: 1;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.block{
+    border: 2px black solid;
+    width:70%;
+    margin: 30px auto ;
+}
+.block-title{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.category{
+    background-color: tomato;
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+.block-img{
+    width: 100%;
+}
+.block-tekst{
+padding: 15px;
+}
+.end{
+    text-decoration: underline;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
